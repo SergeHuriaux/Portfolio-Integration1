@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*--SECTION 1--*/
+section.sec1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section.sec1 .container {
+    background-color:#ffffff22;
+    padding: 5em;
+    backdrop-filter: blur(7px);
+    color: white;
+    position: relative;
+}
+section.sec1 .container::before {
+   content: url(../images/person.png);
+   position: absolute;
+   right: 0;
+   bottom: -75%;
+}
+
+section.sec1 .container span {
+    font-size: 2em;
+}
+
+section.sec1 .container span:nth-child(1) {
+    font-weight: 300;
+}
+
+section.sec1 .container h1 {
+    font-size: 4em;
+    font-style: oblique;
+    margin: 20px 0;
+}
+
