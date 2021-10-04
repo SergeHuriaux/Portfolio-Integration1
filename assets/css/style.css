@@ -37,7 +37,7 @@ section.sec1 .container::before {
    content: url(../images/person.png);
    position: absolute;
    right: 0;
-   bottom: -75%;
+   bottom: -73%;
 }
 
 section.sec1 .container span {
