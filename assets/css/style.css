@@ -26,29 +26,30 @@ section.sec1 {
     background-position: center;
 }
 
-section.sec1 .container {
+section.sec1 .container-blur {
     background-color:#ffffff22;
     padding: 5em;
     backdrop-filter: blur(7px);
     color: white;
     position: relative;
+    border-radius: 10px;
 }
-section.sec1 .container::before {
+section.sec1 .container-blur::before {
    content: url(../images/person.png);
    position: absolute;
    right: 0;
    bottom: -73%;
 }
 
-section.sec1 .container span {
+section.sec1 .container-blur span {
     font-size: 2em;
 }
 
-section.sec1 .container span:nth-child(1) {
+section.sec1 .container-blur span:nth-child(1) {
     font-weight: 300;
 }
 
-section.sec1 .container h1 {
+section.sec1 .container-blur h1 {
     font-size: 4em;
     font-style: oblique;
     margin: 20px 0;

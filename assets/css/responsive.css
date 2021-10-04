@@ -7,36 +7,36 @@
 /*--SECTION 1--*/
 
 @media screen and (max-width: 1120px) {
-    section.sec1 .container::before {
+    section.sec1 .container-blur::before {
         transform: scale(0.8);
         bottom: -71%;
     }
 }
 
 @media screen and (max-width: 1000px) {
-    section.sec1 .container::before {
+    section.sec1 .container-blur::before {
         transform: scale(0.6) translateX(16%);
         bottom: -87%;
     }
 }
 
 @media screen and (max-width: 840px) {
-    section.sec1 .container::before {
+    section.sec1 .container-blur::before {
         display: none;
     }
-    section.sec1 .container{
+    section.sec1 .container-blur{
         text-align: center;
     }
-    section.sec1 .container {
+    section.sec1 .container-blur {
     padding: 2em 0em;
      }
 }
 
 @media screen and (max-width: 510px) {
-   section.sec1 .container span {
+   section.sec1 .container-blur span {
     font-size: 1.5em;
     }
-    section.sec1 .container h1 {
+    section.sec1 .container-blur h1 {
     font-size: 2.5em;
     }
 }
