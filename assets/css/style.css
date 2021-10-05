@@ -206,3 +206,105 @@ section.sec2 .container .row-button button:nth-child(2) {
 section.sec2 .container .row-button button img {
     margin-right: 15px;
 }
+
+/*--SECTION 3--*/
+
+section.sec3 .competence-titre {
+    position: relative;
+    padding-left: 30px;
+}
+
+section.sec3 .competence-titre::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(25,183,195,1) 70%);
+    top: 0;
+    left: 0;
+}
+
+section.sec3 .competence-titre h3 {
+    font-weight: 300;
+    font-size: 1.5em;
+    color: grey;
+}
+
+section.sec3 .competence-titre h1 {
+    font-weight: bold;
+    font-size: 3.5em;
+    color: black;
+}
+
+section.sec3 .competence-card {
+    margin: 70px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+section.sec3 .competence-card .card {
+    height: 245px;
+    width: 245px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0.25s;
+}
+
+section.sec3 .competence-card .card:hover {
+     transform: translateY(-20px);
+}
+
+section.sec3 .competence-card .card:nth-child(1) {
+    background-color:#d9fffc;
+}
+
+section.sec3 .competence-card .card:nth-child(1):hover {
+     box-shadow: 0px 70px 60px -50px #abe6e1;
+}
+
+section.sec3 .competence-card .card:nth-child(2) {
+    background-color:#e4ffc7;
+}
+
+section.sec3 .competence-card .card:nth-child(2):hover {
+     box-shadow: 0px 70px 60px -50px #a8ee5d;
+}
+
+section.sec3 .competence-card .card:nth-child(3) {
+    background-color:#fff3dd;
+}
+
+section.sec3 .competence-card .card:nth-child(3):hover {
+     box-shadow: 0px 70px 60px -50px #e6c892;
+}
+
+section.sec3 .competence-card .card:nth-child(4) {
+    background-color:#ffe0e0;
+}
+
+section.sec3 .competence-card .card:nth-child(4):hover {
+     box-shadow: 0px 70px 60px -50px #f6a5a5;
+}
+
+section.sec3 .competence-card .icon-competence {
+    background-color: white;    
+    height: 120px;
+    width: 120px;
+    border-radius: 100px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 33px 60px -40px black;
+}
+
+section.sec3 .competence-card .nom-competence span{
+    color: balck;
+    font-size: 1.5em;
+    font-weight: 400;
+}
