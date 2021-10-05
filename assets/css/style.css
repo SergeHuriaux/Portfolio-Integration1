@@ -97,6 +97,10 @@ section.sec1 .navbar .navbar-block a{
 /*--SECTION 2--*/
 
 section.sec2 .container {
+    padding: 100px 0;
+}
+
+section.sec2 .container .row-propos {
     display: flex;
     flex-direction: row;
     padding: 100px 0;
@@ -168,4 +172,37 @@ section.sec2 .container .row .mini-square p {
     color: #b05edc;
     position: relative;
     top: -20px;
+}
+
+section.sec2 .container .row-button {
+    width: 100%;
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.sec2 .container .row-button button {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 1.2em;
+    color: black;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+section.sec2 .container .row-button button:nth-child(1) {
+    background-color: white;
+    border: 2px solid grey;
+}
+
+section.sec2 .container .row-button button:nth-child(2) {
+    background-color: #e8f0f9;
+    border: none;
+}
+
+section.sec2 .container .row-button button img {
+    margin-right: 15px;
 }
