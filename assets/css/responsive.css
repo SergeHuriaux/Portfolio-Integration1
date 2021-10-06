@@ -157,3 +157,104 @@
 }
 
 /*--SECTION 4--*/
+
+@media screen and (max-width: 1140px) {
+    section.sec4 .portfolio-top-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    section.sec4 .portfolio-titre{
+        margin-left: 15px;
+    }
+
+    section.sec4 .container .portfolio-card .row {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    section.sec4 .portfolio-top-card .left h1 {
+        font-size: 2em;
+    }
+
+    section.sec4 .portfolio-top-card .left h3 {
+        font-size: 1em;
+    }
+
+    section.sec4 .portfolio-top-card .left .email-icon img {
+        height: 55px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    section.sec4 .portfolio-top-card {
+        flex-direction: column; 
+    }
+
+    section.sec4 .portfolio-top-card .left{
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    section.sec4 .container .portfolio-card .card {
+        height: 100%;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    section.sec4 .container .portfolio-card .card .card-left {
+        height: 500px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+     section.sec4 .container .portfolio-card .card .card-right {
+        padding: 45px 15px;
+        max-width: 380px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 570px) {
+
+    section.sec4 .portfolio-top-card {
+        padding: 2em 1em;
+    }
+
+    section.sec4 .portfolio-top-card .left {
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sec4 .portfolio-top-card .left .separator {
+        display: none; 
+    }
+
+    section.sec4 .portfolio-top-card .left .email-title {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    section.sec4 .portfolio-top-card .left .email-icon {
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    section.sec4 .portfolio-titre h3 {
+        font-size: 1.2em;
+    }
+
+     section.sec4 .portfolio-titre h1 {
+        font-size: 2.4em;
+    }
+}
+
+    

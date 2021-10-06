@@ -393,6 +393,7 @@ section.sec4 .container .portfolio-titre::before {
 section.sec4 .container .portfolio-card {
     display: flex;
     flex-direction: column;
+    margin-top: 75px;
 }
 
 section.sec4 .container .portfolio-card .row {
@@ -416,6 +417,7 @@ section.sec4 .container .portfolio-card .card .card-left{
     height: 100%;
     width: 260px;
     background-size: cover;
+    background-position: center;
     border-radius: 10px; 
 }
 
