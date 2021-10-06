@@ -9,7 +9,7 @@
 .container {
     width: 1120px;
     margin: 0 auto;
-    position: relative;
+    height: 100%;
 }
 
 body {
@@ -25,6 +25,7 @@ section.sec1 {
     background-image: url(../images/background.png);
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
 section.sec1 .container {
@@ -66,7 +67,7 @@ section.sec1 .container-blur h1 {
 /*--NAVBAR--*/
 
 section.sec1 .navbar {
-    width: 100%;
+    width: 1120px;
     min-height: 100px;
     position: absolute;
     background-color: white;    
@@ -182,7 +183,8 @@ section.sec2 .container .row-button {
     justify-content: center;
 }
 
-section.sec2 .container .row-button button {
+section.sec2 .container .row-button button,  
+section.sec4 .container .right button {
     display: flex;
     align-items: center;
     padding: 10px 20px;
@@ -193,12 +195,12 @@ section.sec2 .container .row-button button {
     margin: 0 10px;
 }
 
-section.sec2 .container .row-button button:nth-child(1) {
+section.sec2 .container .row-button a:nth-child(1) button {
     background-color: white;
     border: 2px solid grey;
 }
 
-section.sec2 .container .row-button button:nth-child(2) {
+section.sec2 .container .row-button a:nth-child(2) button {
     background-color: #e8f0f9;
     border: none;
 }
@@ -209,7 +211,13 @@ section.sec2 .container .row-button button img {
 
 /*--SECTION 3--*/
 
-section.sec3 .competence-titre {
+section.sec3  {
+    margin: 45px 0;
+}
+
+
+section.sec3 .competence-titre,
+section.sec4 .portfolio-titre {
     position: relative;
     padding-left: 30px;
 }
@@ -225,13 +233,15 @@ section.sec3 .competence-titre::before {
     left: 0;
 }
 
-section.sec3 .competence-titre h3 {
+section.sec3 .competence-titre h3,
+section.sec4 .portfolio-titre h3 {
     font-weight: 300;
     font-size: 1.5em;
     color: grey;
 }
 
-section.sec3 .competence-titre h1 {
+section.sec3 .competence-titre h1,
+section.sec4 .portfolio-titre h1 {
     font-weight: bold;
     font-size: 3.5em;
     color: black;
@@ -308,3 +318,75 @@ section.sec3 .competence-card .nom-competence span{
     font-size: 1.5em;
     font-weight: 400;
 }
+
+/*--SECTION 4--*/
+
+section.sec4 {
+    background-image: url(../images/portfolio.png);
+    background-color: #f3e4fd;
+    margin: 250px 0 150px;
+    padding: 225px 0;
+    position: relative;
+}
+
+section.sec4 .portfolio-top-card {
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    width: 1120px;
+    background-color: white;
+    padding: 3em 4em;
+    border-radius: 20px;
+    box-shadow: 0px 60px 60px -60px #7766ff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+section.sec4 .portfolio-top-card .left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.sec4 .portfolio-top-card .left .email-icon {
+    margin-right: 20px;
+}
+
+section.sec4 .portfolio-top-card .left .separator {
+    width: 2px;
+    height: 84px;
+    background-color: rgb(175, 175, 175);
+}
+
+section.sec4 .portfolio-top-card .left .email-title {
+    margin-left: 20px;
+}
+
+section.sec4 .portfolio-top-card .left h1 {
+    font-size: 2.7em;
+}
+
+section.sec4 .portfolio-top-card .left h3 {
+    font-size: 1.2em;
+    color: grey;
+    font-weight: 400;
+}
+
+section.sec4 .container .right a button {
+    background-color: #e8f0f9;
+    border: none;
+}
+
+section.sec4 .container .portfolio-titre::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(25,183,195,1) 70%);
+    top: 0;
+    left: 0;
+}
+

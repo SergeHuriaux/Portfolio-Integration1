@@ -6,6 +6,12 @@
 
 /*--SECTION 1--*/
 
+@media screen and (max-width: 1140px) {
+    section.sec1 .navbar {
+        width: 100%;
+    }
+}
+
 @media screen and (max-width: 1120px) {
     section.sec1 .container-blur::before {
         transform: scale(0.8);
@@ -149,3 +155,5 @@
         font-size: 2.4em;
     }
 }
+
+/*--SECTION 4--*/
