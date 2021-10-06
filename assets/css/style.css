@@ -390,3 +390,66 @@ section.sec4 .container .portfolio-titre::before {
     left: 0;
 }
 
+section.sec4 .container .portfolio-card {
+    display: flex;
+    flex-direction: column;
+}
+
+section.sec4 .container .portfolio-card .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.sec4 .container .portfolio-card .card {
+    height: 320px;
+    width: 550px;
+    border-radius: 10px;
+    background-color: white;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section.sec4 .container .portfolio-card .card .card-left{
+    height: 100%;
+    width: 260px;
+    background-size: cover;
+    border-radius: 10px; 
+}
+
+section.sec4 .container .portfolio-card .row:nth-child(1) .card:nth-child(1) .card-left {
+    background-image: url(../images/work_1.png);
+}
+
+section.sec4 .container .portfolio-card .row:nth-child(1) .card:nth-child(2) .card-left {
+    background-image: url(../images/work_2.png);
+}
+
+section.sec4 .container .portfolio-card .row:nth-child(2) .card:nth-child(1) .card-left {
+    background-image: url(../images/work_3.png);
+}
+
+section.sec4 .container .portfolio-card .row:nth-child(2) .card:nth-child(2) .card-left {
+    background-image: url(../images/work_4.png);
+}
+
+section.sec4 .container .portfolio-card .card .card-right {
+    max-width: 290px; 
+    padding: 0 20px;
+}
+
+section.sec4 .container .portfolio-card .card .card-right p {
+    margin: 25px 0;
+    font-size: 1.5em;
+}
+
+section.sec4 .container .portfolio-card .card .card-right button {
+    background: grey;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 1em;
+    border-radius: 20px;
+}
