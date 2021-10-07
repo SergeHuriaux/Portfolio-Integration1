@@ -217,7 +217,8 @@ section.sec3  {
 
 
 section.sec3 .competence-titre,
-section.sec4 .portfolio-titre {
+section.sec4 .portfolio-titre,
+section.sec5 .avis-title {
     position: relative;
     padding-left: 30px;
 }
@@ -234,14 +235,16 @@ section.sec3 .competence-titre::before {
 }
 
 section.sec3 .competence-titre h3,
-section.sec4 .portfolio-titre h3 {
+section.sec4 .portfolio-titre h3,
+section.sec5 .avis-title h3 {
     font-weight: 300;
     font-size: 1.5em;
     color: grey;
 }
 
 section.sec3 .competence-titre h1,
-section.sec4 .portfolio-titre h1 {
+section.sec4 .portfolio-titre h1,
+section.sec5 .avis-title h1 {
     font-weight: bold;
     font-size: 3.5em;
     color: black;
@@ -454,4 +457,91 @@ section.sec4 .container .portfolio-card .card .card-right button {
     border: none;
     padding: 1em;
     border-radius: 20px;
+}
+
+/*--SECTION 5--*/
+
+section.sec5 .container .avis-title::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(25,183,195,1) 70%);
+    top: 0;
+    left: 0;
+}
+
+section.sec5 .container .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 130px 0;
+}
+
+section.sec5 .container .row .card {
+    position: relative;
+    width: 355px;
+    height: 355px;
+    border-radius:10px;
+    background-image: url(../images/quote.svg);
+    background-position: center;
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-blend-mode: soft-light;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 3em 2em;
+    transition: 0.2s;
+}
+
+section.sec5 .container .row .card:hover {
+    transform: translateY(-25px);
+}
+
+
+section.sec5 .container .row .card:nth-child(1) {
+    background-color:#fff3dd;
+}
+
+section.sec5 .container .row .card:nth-child(2) {
+    background-color:#d9fffc;
+}
+
+section.sec5 .container .row .card:nth-child(3) {
+    background-color:#ffe0e0;
+}
+
+section.sec5 .container .row .card p {
+    margin: auto;
+    line-height: 1.6em;
+    color: #5a5a5a;
+    font-size: 1.1em;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: 1px;
+}
+
+section.sec5 .container .row .card span {
+    color: black;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+section.sec5 .container .row .card::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-image: url(../images/people.png);    
+    background-size: cover;
+    background-position: center;
+    border: 10px solid white;
 }
