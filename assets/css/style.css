@@ -47,7 +47,7 @@ section.sec1 .container-blur::before {
    content: url(../images/person.png);
    position: absolute;
    right: 0;
-   bottom: -73%;
+   bottom: -68%;
 }
 
 section.sec1 .container-blur span {

@@ -12,16 +12,23 @@
     }
 }
 
+
+@media screen and (max-width: 1440px) {
+    section.sec1 .container-blur::before {
+        transform: scale(0.8);
+        bottom: -70%;
+    }
+}
 @media screen and (max-width: 1120px) {
     section.sec1 .container-blur::before {
         transform: scale(0.8);
-        bottom: -71%;
+        bottom: -76%;
     }
 }
 
 @media screen and (max-width: 1000px) {
     section.sec1 .container-blur::before {
-        transform: scale(0.6) translateX(16%);
+        transform: scale(0.7) translateX(16%);
         bottom: -94%;
     }
 }
