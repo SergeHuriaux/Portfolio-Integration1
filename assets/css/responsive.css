@@ -306,3 +306,82 @@
         font-size: 2.5em;
     }
 }
+
+/*--SECTION 6--*/
+
+@media screen and (max-width: 1120px) {
+    section.sec6 .form-title {
+        margin-left: 15px;
+    }
+
+    section.sec6 .form-contact .form-social-card .card span{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+}
+
+@media screen and (max-width: 1050px) {
+    section.sec6 .form-contact .form-social-card .card {
+        flex-direction: column;
+        margin: 0 5px;
+        padding: 10px 0;
+    }
+
+    section.sec6 .form-contact .form-social-card .card span{
+        margin-left: 0;
+        margin-top: 8px;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    section.sec6 .form-contact {
+        padding: 1em;
+    }
+
+    section.sec6 .form-contact .form-social-card {
+        flex-direction: column;
+    }
+
+    section.sec6 .form-contact .form-social-card .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section.sec6 .form-contact .row {
+        margin-bottom: 0;    
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.sec6 .form-contact .row:nth-child(4) {
+        margin-bottom: 40px;    
+    }
+
+    section.sec6 .form-contact .form-contact-input .form-input{
+        width: 70% !important;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    section.sec6 .form-title h3 {
+        font-size: 1.2em;
+    }
+
+    section.sec6 .form-title h1 {
+        font-size: 2.5em;
+    }
+
+    section.sec6 {
+        padding: 50px 0;
+    }
+
+    section.sec6 .form-contact .form-contact-input .form-input {
+        width: 95% !important;
+    }
+}
