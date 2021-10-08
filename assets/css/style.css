@@ -588,7 +588,7 @@ section.sec6 .form-contact {
     margin-top: 75px;
     border-radius: 20px;
     padding: 5em;
-    height: 500px; /*A SUPPRIMER*/
+    height: 1000px; /*A SUPPRIMER*/
 }
 
 section.sec6 .form-contact .form-social-card {
@@ -633,4 +633,60 @@ section.sec6 .form-contact .form-social-card .card:hover:nth-child(3) {
 
 section.sec6 .form-contact .form-social-card .card span {
     margin-left: 20px;
+}
+
+section.sec6 .form-contact-input {
+    margin-top: 75px;
+}
+
+section.sec6 .form-contact .row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+section.sec6 .form-contact .form-contact-input .form-input {
+    width: 48%;
+    position: relative;
+}
+
+section.sec6 .form-contact .form-contact-input label {
+    position: absolute;
+    top: -14px;
+    left: 32px;
+    padding: 0 10px;
+    background-color: white;
+}
+
+section.sec6 .form-contact .form-contact-input input,
+section.sec6 .form-contact .form-contact-input select,
+section.sec6 .form-contact .form-contact-input textarea {
+    padding: 2em 3em;
+    border-radius: 40px;
+    border: 1px solid #dddddd;
+    outline: none;
+    width: 100%;
+}
+
+section.sec6 .row:nth-child(3) .form-input {
+    width: 100% !important;
+}
+
+section.sec6 .row textarea {
+    resize: none;
+}
+
+section.sec6 .row:nth-child(4) button {
+    background-color: #e8f0f9;
+    border: 0;
+    outline: none;
+    padding: 1em 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    width: 250px;
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
 }
