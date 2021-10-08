@@ -265,3 +265,44 @@
 }
 
 /*--SECTION 5--*/
+
+@media screen and (max-width: 1140px) {
+    section.sec5 .container .row {
+        justify-content: center;
+    }
+
+    section.sec5 .container .row .card {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    section.sec5 .avis-title {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    section.sec5 .container .row .card {
+        width: 90%;
+        height: 255px;
+        margin: 50px 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.sec5 .container .row .card {
+        min-height: 280px;
+        padding: 3em 1em 1em 1em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    section.sec5 .avis-titre h3{
+        font-size: 1.2em;
+    }
+
+    section.sec5 .avis-titre h1{
+        font-size: 2.5em;
+    }
+}
