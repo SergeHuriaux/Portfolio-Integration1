@@ -218,7 +218,8 @@ section.sec3  {
 
 section.sec3 .competence-titre,
 section.sec4 .portfolio-titre,
-section.sec5 .avis-title {
+section.sec5 .avis-title,
+section.sec6 .form-title {
     position: relative;
     padding-left: 30px;
 }
@@ -236,7 +237,8 @@ section.sec3 .competence-titre::before {
 
 section.sec3 .competence-titre h3,
 section.sec4 .portfolio-titre h3,
-section.sec5 .avis-title h3 {
+section.sec5 .avis-title h3,
+section.sec6 .form-title h3 {
     font-weight: 300;
     font-size: 1.5em;
     color: grey;
@@ -244,7 +246,8 @@ section.sec5 .avis-title h3 {
 
 section.sec3 .competence-titre h1,
 section.sec4 .portfolio-titre h1,
-section.sec5 .avis-title h1 {
+section.sec5 .avis-title h1,
+section.sec6 .form-title h1 {
     font-weight: bold;
     font-size: 3.5em;
     color: black;
@@ -557,4 +560,77 @@ section.sec5 .container .row .card::before {
     background-size: cover;
     background-position: center;
     border: 10px solid white;
+}
+
+/*--SECTION 6--*/
+
+section.sec6 {
+    background-image: url(../images/bg_img_2.png);
+    background-repeat: repeat;
+    background-color: #0066ff17;
+    padding: 150px 0;
+}
+
+section.sec6 .form-title::before {
+    content:"";
+    position: absolute;
+    height: 100%;
+    width: 8px;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 70%, rgba(25,183,195,1) 70%);
+    top: 0;
+    left: 0;
+}
+
+section.sec6 .form-contact {
+    background-color: white;
+    width: 100%;
+    margin-top: 75px;
+    border-radius: 20px;
+    padding: 5em;
+    height: 500px; /*A SUPPRIMER*/
+}
+
+section.sec6 .form-contact .form-social-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.sec6 .form-contact .form-social-card .card {
+    height: 100px;
+    width: 290px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+
+section.sec6 .form-contact .form-social-card .card:nth-child(1) {
+    background-color: #d9fffc;
+}
+
+section.sec6 .form-contact .form-social-card .card:hover:nth-child(1) {
+    box-shadow: 0px 35px 60px -40px #34a59c;
+}
+
+section.sec6 .form-contact .form-social-card .card:nth-child(2) {
+    background-color: #e4ffc7;
+}
+
+section.sec6 .form-contact .form-social-card .card:hover:nth-child(2) {
+    box-shadow: 0px 35px 60px -40px #81f802;
+}
+
+section.sec6 .form-contact .form-social-card .card:nth-child(3) {
+    background-color: #e8f0f9;
+}
+
+section.sec6 .form-contact .form-social-card .card:hover:nth-child(3) {
+    box-shadow: 0px 35px 60px -40px #2284f3;
+}
+
+section.sec6 .form-contact .form-social-card .card span {
+    margin-left: 20px;
 }
